@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,300;0,700;1,300;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Home_Header.css">
+    <link rel="stylesheet" href="CSS/Home_Advert.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NxtStep PH/Home</title>
+    <style>
+        .new_arrivals {
+            display: flex;
+            position: relative;
+            width: 100vw;
+            height: 110vh;
+            background-color: white;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .new_arrivals .arrivals_container {
+            width: 97%;
+            height: 97%;
+            background-image: linear-gradient(#222222 42%, #636363 100%);
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .new_arrivals .arrivals_container .arrivals_text{
+            width: 86%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+        }
+
+        .arrivals_text .arrivals_left_text{
+            width: 50%;
+        }
+
+        .arrivals_text .arrivals_left_text h1 {
+            color: white;
+            font-size: 65px;
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+        }
+
+        .arrivals_text .arrivals_right_text {
+            display: flex;
+            width: 50%;
+            justify-content: end;
+            
+        }
+
+        .arrivals_text .arrivals_right_text a {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .arrivals_choices {
+            width: 86%;
+            height: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            position: relative;
+        }
+
+        .arrivals_shoe_container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 85%;
+            border-radius: 25px;
+            border: 5px solid white;
+            background-color: #D9D9D9;
+        }
+
+        .arrivals_shoe_img {
+            display: flex;
+            width:100%;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrivals_shoe_img_box {
+            background-color: white;
+            border-radius: 25px;
+            width: 89%;
+            height: 90%;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+        }
+
+        .arrivals_shoe_img_box .new_tag {
+            display: flex;
+            text-align: end;
+            background-color: black;
+            position: absolute;
+            text-align: center;
+            right: 0px;
+            padding: 3px 8px;
+            margin: 15px 20px;
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            font-size: 13px;
+        }
+
+        .arrivals_shoe_img_box img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+        }
+
+        .arrivals_shoe_info {
+            align-self: center;
+            height: 30%;
+            width: 85%;
+            position: relative;
+        }
+
+        .arrivals_shoe_info .shoe_name {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            color: black;
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        .arrivals_shoe_info .shoe_price {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: black;
+            font-size: 39px;
+        }
+
+        .heart_icon {
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        width: 35px; 
+        height: auto;
+        margin: 20px;
+        cursor: pointer;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="Images/Logo.png" alt="Logo">
+        <nav>
+            <ul class="Navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="RightSide">
+            <input class="Search_Bar" type="text" placeholder="Search">
+            <a href="#"><img class="Icon" src="Images/favorite.png" alt="Favorite"></a>
+            <a href="#"><img class="Icon" src="Images/Add to cart 1.png" alt="Cart"></a>
+        </div>
+    </header>
+    <div class="first_page">
+     <div class="top-section">
+        <div class="left_side">
+            <div class="text_block">
+                <h1 id="white">ELEVATE<br><span>YOUR STEP</span></h1>
+                <p>Shoes that work as hard as you do. Whether for style or performance, we’ve got the perfect pair for you.</p>
+            <div class="first_buttons">
+                <a href="#"><button class="page1_Button1">SHOP NOW</button></a>
+                <a href="#"><button class="page1_Button2">EXPLORE</button></a>
+            </div>
+            </div>
+        </div>
+        <div class="right_side">
+            
+            <div class="radient"></div>
+            <img src="Images/Nikefly.png" usemap="#image-map" alt="">
+            <map name="image-map">
+                <area target="" alt="" title="" href="" coords="6,509,14,551,50,575,114,560,196,540,273,506,333,495,471,465,555,437,655,384,710,348,690,320,668,291,640,248,621,200,601,154,582,134,562,120,538,123,520,140,488,138,451,148,422,156,400,163,394,183,401,212,397,229,370,186,332,194,308,208,299,229,255,217,216,222,191,241,193,258,170,241,186,299,172,344,121,404,50,467,22,489" shape="poly">
+            </map>
+            <div id="Advert_Site">
+            <div class="advert_tag">
+                <h1>Nike Fly.By Mid 3 Black/White</h1>
+                <p>Available Now</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="Brands">
+            <div class="text">
+                <h1>Premium Brands</h1>
+                <p>Select a Brand</p>
+            </div>
+            <div class="choices">
+                <div class="shoe_container">
+                    <a href="#"><div class="shoe">
+                        <img src="Images/Nike.jpg" alt="">
+                    </div>
+                    <p class="brand_name">Nike</p></a>
+                </div>
+                <div class="shoe_container">
+                    <a href="#"><div class="shoe">
+                        <img src="Images/New Balance.jpg" alt="">
+                    </div>
+                    <p class="brand_name">New Balance</p></a>
+                </div>
+                <div class="shoe_container">
+                    <a href="#"><div class="shoe">
+                        <img src="Images/Reebok.jpg" alt="">
+                    </div>
+                    <p class="brand_name">Reebok</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new_arrivals">
+        <div class="arrivals_container">
+            <div class="arrivals_text">
+                <div class="arrivals_left_text"><h1>New Arrivals</h1></div>
+                <div class="arrivals_right_text"><a href="#"><p>View All -></p></a></div>
+                
+            </div>
+
+            <div class="arrivals_choices">
+
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Jogger Lite Black.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Jogger Lite Black</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                <img class="heart_icon" src="Images/Heart Icon.png" alt="">
+                                        </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Jogger Lite Burgundy.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Jogger Lite Burgundy</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                <img class="heart_icon" src="Images/Heart Icon.png" alt="">
+                                        </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Stridium 2.0 Grey.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Stridium 2.0 "Grey"</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                <img class="heart_icon" src="Images/Heart Icon.png" alt="">
+                                        </div>
+                            </div>
+                        </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

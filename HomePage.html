@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth@0,75..100;1,75..100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,300;0,700;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Home_Header.css">
+    <link rel="stylesheet" href="CSS/Home_Advert.css">
+    <link rel="stylesheet" href="CSS/Home_New_Arrivals.css">
+    <link rel="stylesheet" href="CSS/Home_Featured.css">
+    <link rel="stylesheet" href="CSS/Home_About_Us.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NxtStep PH/Home</title>
+    <style>
+        #Contacts {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 31.25rem;
+            background-color: white;
+            position: relative;
+            margin-top: -80px;
+            border-radius: 50px;
+            
+        }
+
+        .contacts_container {
+            display: flex;
+            
+            width: 100%;
+            height: 90%;
+        }
+
+        .contacts_left {
+            width: 100%;
+            min-height: 100%;
+            margin: 2.5rem 0 0 3rem;
+        }
+
+        .contacts_right {
+            width: 100%;
+        }
+
+        .contacts_logo {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 10%;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        .contacts_logo img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .contacts_logo p {
+            padding-left: 4px;
+        }
+        #Contacts .contact_us {
+            margin: 1rem 0 0 0
+        }
+
+        .contact_us h1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .email {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px;
+            min-height: 4.0em;
+            width: 27em;
+            border: 2px solid black;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 0.875rem;
+            align-items: center;
+        }
+
+        .email a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .email #email {
+            display: inline-block;
+            padding-left: 1em;
+        }
+
+        .email #arrow {
+            display: inline-block;
+           color: white;
+           background-color: black;
+           border-radius: 100%;    
+           margin-left: 10.3em;
+           padding: 1em 1.2em 1em 1.2em;
+        }
+
+        .contacts_right {
+            display: flex;
+            margin: 3rem 0 0 0;
+            width: 100%;
+        }
+
+        .contacts_right a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contacts_right div {
+            margin: 0 8rem 0 0;
+        }
+        
+        .contacts_right #Social {
+            margin: 0;
+        }
+
+        .contacts_right h2 {
+            margin-bottom: 1.2rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        .contacts_right ul {
+            list-style-type: none;
+        }
+
+        .contacts_right li {
+            margin: 0.9em 0 0 0.1em;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .contacts_right li:hover {
+            font-weight: 700;
+        }
+
+        .line {
+            height: 0.1px;
+            width: 95vw;
+            background-color: black;
+            align-self: center;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .bottom .terms {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 75em;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            padding-top: 0.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="Images/Logo.png" alt="Logo">
+        <nav>
+            <ul class="Navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="RightSide">
+            <input class="Search_Bar" type="text" placeholder="Search">
+            <a href="#"><img class="Icon" src="Images/favorite.png" alt="Favorite"></a>
+            <a href="#"><img class="Icon" src="Images/Add to cart 1.png" alt="Cart"></a>
+        </div>
+    </header>
+    <section id="Home">
+     <div class="top-section">
+        <div class="left_side">
+            <div class="text_block">
+                <h1 id="white">ELEVATE<br><span>YOUR STEP</span></h1>
+                <p>Shoes that work as hard as you do. Whether for style or performance, we’ve got the perfect pair for you.</p>
+                    <div class="first_buttons">
+                        <a href="#"><button class="page1_Button1">SHOP NOW</button></a>
+                        <a href="#"><button class="page1_Button2">EXPLORE</button></a>
+                    </div>
+            </div>
+        </div>
+            <div class="right_side">
+            
+                <div class="radient"></div>
+                    <img src="Images/Nikefly.png" usemap="#image-map" alt="">
+                        <map name="image-map">
+                            <area target="" alt="" title="" href="" coords="6,509,14,551,50,575,114,560,196,540,273,506,333,495,471,465,555,437,655,384,710,348,690,320,668,291,640,248,621,200,601,154,582,134,562,120,538,123,520,140,488,138,451,148,422,156,400,163,394,183,401,212,397,229,370,186,332,194,308,208,299,229,255,217,216,222,191,241,193,258,170,241,186,299,172,344,121,404,50,467,22,489" shape="poly">
+                        </map>
+                    <div id="Advert_Site">
+                        <div class="advert_tag">
+                            <h1>Nike Fly.By Mid 3 Black/White</h1>
+                            <p>Available Now</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <div class="Brands">
+                <div class="text">
+                    <h1>Premium Footwear</h1>
+                    <p>Select a Brand</p>
+                </div>
+            <div class="choices">
+                <div class="shoe_container">
+                    <a href="#">
+                        <div class="shoe">
+                            <img src="Images/Nike.jpg" alt="">
+                        </div>
+                    <p class="brand_name">Nike</p>
+                    </a>
+                </div>
+                <div class="shoe_container">
+                    <a href="#">
+                        <div class="shoe">
+                            <img src="Images/New Balance.jpg" alt="">
+                        </div>
+                    <p class="brand_name">New Balance</p>
+                    </a>
+                </div>
+                <div class="shoe_container">
+                    <a href="#">
+                        <div class="shoe">
+                            <img src="Images/Reebok.jpg" alt="">
+                        </div>
+                    <p class="brand_name">Reebok</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="new_arrivals">
+        <div class="arrivals_container">
+            <div class="arrivals_text">
+                <div class="arrivals_left_text"><h1>New Arrivals</h1></div>
+                <div class="arrivals_right_text"><a href="#"><p>View All -></p></a></div>
+                
+            </div>
+
+            <div class="arrivals_choices">
+                    <div class="arrivals_wrapper">
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Jogger Lite Black.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Jogger Lite Black</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                
+                                        </div>
+                            </div>
+                        </a>
+                        <div class="animated_cart">
+                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
+                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
+                            <img class="cart_icon" src="Images/cart.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="arrivals_wrapper">
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Jogger Lite Burgundy.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Jogger Lite Burgundy</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                
+                                        </div>
+                            </div>
+                        </a>
+                        <div class="animated_cart">
+                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
+                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
+                            <img class="cart_icon" src="Images/cart.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="arrivals_wrapper">
+                        <a href="#">
+                            <div class="arrivals_shoe_container">
+                                <div class="arrivals_shoe_img">
+                                    <div class="arrivals_shoe_img_box">
+                                        <div class="new_tag">NEW</div>
+                                            <img src="Shoe Images/Stridium 2.0 Grey.png" alt="">
+                                        </div>
+                                    </div>
+                                        <div class="arrivals_shoe_info">
+                                                <h1 class="shoe_name">Stridium 2.0 "Grey"</h1>
+                                                <p class="shoe_price">₱1,090</p>
+                                                
+                                        </div>
+                            </div>
+                        </a>
+                        <div class="animated_cart">
+                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
+                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
+                            <img class="cart_icon" src="Images/cart.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Featured">
+
+        <div class="featured_text">
+            <h1>Featured Products</h1>
+            <a href="#">VIEW ALL →</a>
+        </div>
+
+        <div class="featured_background">
+
+            <div class="featured_container">
+                
+                <div class="blur"></div>
+                <a href="#">
+                    <div>
+                        <div class="featured_shoe">
+                            <img src="Images/Jordan 38.png" alt="">
+                        </div>
+                    
+                        <div class="featured_shoe_info">
+                            <p>Jordan 38 “White Metallic Gold"</p>
+                            <p>₱3,890</p>
+                        </div>
+                    </div>
+
+            </div>
+        </a>
+
+            <div class="featured_container">
+
+                <div class="blur"></div>
+                <a href="#">
+                    <div>
+                        <div class="featured_shoe">
+                            <img src="Images/Nike Impact 3 “Black Grey”.png" alt="">
+                        </div>
+                    
+                        <div class="featured_shoe_info">
+                            <p>Nike Impact 3 “Black Grey”</p>
+                            <p>₱1,690</p>
+                        </div>
+                    </div>
+
+            </div>
+        </a>
+
+            <div class="featured_container">
+
+                <div class="blur"></div>
+                <a href="#">
+                    <div>
+                        <div class="featured_shoe">
+                            <img src="Images/Nike KD Trey 5 X “Green Strike.png" alt="">
+                        </div>
+                    
+                        <div class="featured_shoe_info">
+                            <p>Nike KD Trey 5 X “Green Strike"</p>
+                            <p>₱1,790</p>
+                        </div>
+                    </div>
+
+            </div>
+        </a>
+
+        </div>
+
+
+    </section>
+    
+    <section id="About_Us">
+        <div class="Reviews">
+            <img src="Images/Reviews.png" alt="">
+        </div>
+        
+        <div class="information">
+            <div class="navigation">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="text">
+                <p id="topic">About Us</p>
+
+                <h1>"Every Pair tells a Story, and the <span>Right Buyer</span> Completes the Chapter."</h1>
+
+                <p id="description">At NxtStep PH, we buy and sell authentic, high-quality shoes, bringing you the best styles from top brands. We guarantee 100% original footwear for every sneakerhead and trendsetter.</p>
+            </div>
+            
+
+            
+        </div>
+    </section>
+
+    <section id="Contacts">
+        <div class="contacts_container">
+        <div class="contacts_left">
+            <div class="contacts_logo">
+                <img src="Images/nxtstep logo 2.png" alt="">
+                <p>NxtStep PH</p>
+            </div>
+    
+            <div class="contact_us">
+                <h1>Contact Us!</h1>
+                <div class="email">
+                    <a href="#">
+                        <div id="email"><p>NxtStepPH@gmail.com</p></div>
+                        <div id="arrow">→</div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="contacts_right">
+           <div id="Company">
+            <h2>Company</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+           </div> 
+            
+            <div id="Categories">
+                <h2>Categories</h2>
+            <ul>
+                <li><a href="">Nike</a></li>
+                <li><a href="">Reebok</a></li>
+                <li><a href="">New Balance</a></li>
+            </ul>
+            </div>
+            
+            <div id="Social">
+                <h2>Social</h2>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+            </div>
+            
+        </div>
+    </div>
+        <div class="bottom">
+            <div class="line"></div>
+            <div class="terms">
+                <div><p>© NxtStep PH</p></div>
+                <div id="termscondition"><p>Terms & Condition</p></div>
+            </div>
+            
+        </div>
+    
+    </section>
+    
+</body>
+</html>
