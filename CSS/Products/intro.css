@@ -1,0 +1,25 @@
+#intro {
+    width: 100%;
+    height: 9.938rem;
+    box-shadow: 0 4px 10px 1px rgba(130, 130, 130, 0.375);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   #intro h1 {
+    font-size: 3.85rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: -1.5rem 0 0 2.5rem;
+   }
+
+   #intro p {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #777777;
+    margin-left: 2.5rem;
+   }

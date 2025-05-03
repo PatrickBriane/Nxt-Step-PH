@@ -1,27 +1,31 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a, button {
+            cursor: pointer;
         }
 
 
         #products-header {
             display: flex;
-            width: auto;
+            width: 100%;
             height: 7rem;
             background-color: #17202C;
+            box-shadow: 0 8px 10px 5px rgba(93, 93, 93, 0.507)
         }
 
         #products-header .image {
-
-            width: auto;
+            width: 10.875em;
             height: 100%;
-            margin: 1.4em 3em 0 2em;
+            margin: 0 3.188rem 0 1.5rem;
         }
 
         #products-header .image img {
             width: 100%;
-            height: 60%;
+            height: 7.188em;
         }
 
         .search-bar::placeholder {
@@ -29,7 +33,7 @@
         }
 
         #products-header .middle-header {
-            margin: 1em 2em 0 1em;
+            margin: 1em 2em 0 0;
         }
 
         .search-bar {
@@ -40,7 +44,7 @@
             border: 1.5px solid #A39393;
             border-radius: 5px;
             padding: 0.5em 70em 0.5em 2.5em;
-            background-image: url('../Images/search (white).png');
+            background-image: url('../../Images/search (white).png');
             background-repeat: no-repeat;
             background-position: 0.6em center;
             background-size: 1.5em;

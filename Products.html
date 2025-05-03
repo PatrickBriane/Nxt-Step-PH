@@ -3,20 +3,145 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth@0,75..100;1,75..100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,300;0,700;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth@0,75..100;1,75..100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS\Products\header.css">
+    <link rel="stylesheet" href="CSS/Products/intro.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NxtStep PH Products</title>
     <style>
-       
+        #products-area {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            padding: 1.875rem 5.688rem 0 5.688rem;
+        }
+
+       #products-area .container {
+            margin-bottom: 2.938rem;
+            width: 17.613rem;
+            height: 24.117rem;
+            box-shadow: 0 4.68px 13.58px 2.34px rgb(186, 185, 185);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+       }
+
+       #products-area .container .shoe {
+            width: 16.438rem;
+            height: 12.313rem;
+            background-color: #DFDFDF;
+            border-radius: 5.85px 5.85px 0 0;
+            margin: 0.588em 0.588em 0 0.588em;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+       }
+
+       #products-area .container .shoe-img {
+        width: 100%;
+        height: 100%;
+       }
+
+       #products-area .shoe button {
+        background: none;
+        color: inherit;
+        border: none;
+        position: absolute;
+        align-self: end;
+        margin: 0.625rem 0.75rem 0 0;
+       }
+
+       #products-area .shoe .favorite {
+        width: 1.625rem;
+        height: auto;
+        border-radius: 50px;
+        transition: 0.5s;
+       }
+
+       #products-area .shoe .favorite:hover {
+        box-shadow: 0 0 10px 2px rgb(255, 91, 91);
+       }
+
+       #products-area .shoe-info {
+        margin: 1.188em 0.588em 0 0.588em;
+       }
+
+       #products-area .shoe-info h2 {
+        font-size: 0.877rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.649);
+        margin: 0 0 0.438em 0;
+       }
+
+       #products-area .shoe-info h1 {
+        font-size: 1.169rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        margin: 0 0 0.375em 0;
+       }
+
+       #products-area .shoe-info p{
+        font-size: 1.096rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+       }
+
+       #products-area .shoe-info button {
+        background: none;
+        border: none;
+        color: inherit;
+        width: 14.105rem;
+        height: 2.193rem;
+        display: flex;
+        justify-self: center;
+        margin-top: 2.25rem;
+       }
+
+       #products-area .shoe-info .cart {
+        display: flex;
+        background-color: #2563EB;
+        width: 100%;
+        height: 100%;
+        border-radius: 5.85px;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+       }
+
+       #products-area .shoe-info .cart img {
+            width: auto;
+            height: 55%;
+            margin: 0 0 0 -1em ;
+       }
+
+       #products-area .shoe-info .cart p {
+        font-size: 0.95rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        color: white;
+        margin: 0 0 0 0.375rem;
+        transition: 0.3s;
+       }
+
+       #products-area .shoe-info button:hover {
+        .cart {
+            background-color: #1b52d1;
+        }
+
+        p {
+            font-weight: 400;
+        }
+       }
     </style>
 </head>
 <body>
     <header id="products-header">
 
         <div class="image">
-            <img src="Images/logo 3.png" alt="">
+            <img src="Images/wwwwdesign 1png.png" alt="">
         </div>
 
         <div class="middle-header">
@@ -27,7 +152,7 @@
 
             <div class="navigation">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="HomePage.html">Home</a></li>
                     <li><a href="">All Products</a></li>
                     <li><a href="">New Arrivals</a></li>
                     <li><a href="">Nike</a></li>
@@ -40,9 +165,33 @@
             <a href=""><img src="Images/favorite.png" alt=""></a>
             <a href=""><img src="Images/Add to cart 1.png" alt=""></a>
         </div>
-        
-       
-       
     </header>
+
+    <div id="intro">
+        <h1>All Products</h1>
+        <p>Browse our full collection of stylish and comfortable shoes for men, women, and kids.</p>
+    </div>
+
+    <section id="products-area">
+        <div class="container">
+            <div class="shoe">
+                <img class="shoe-img" src="Images/Shoes/Jogger Lite Black 2.png" alt="">
+                <button><img class="favorite" src="Images/Heart Icon (button).png" alt=""></button>
+            </div>
+
+            <div class="shoe-info">
+                <h2>Reebok</h2>
+                <h1>Jogger Lite Black</h1>
+                <p>₱1,090</p>
+                    <button>
+                        <div class="cart">
+                            <img src="Images/Add to cart 1.png" alt="">
+                            <p>Add to Cart</p>  
+                        </div>
+                    </button>
+            </div>
+        </div>
+        
+    </section>
 </body>
 </html>
