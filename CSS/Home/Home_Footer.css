@@ -1,0 +1,154 @@
+#Contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 31.25rem;
+    background-color: white;
+    position: relative;
+    margin-top: -80px;
+    border-radius: 50px;
+    
+}
+
+.contacts_container {
+    display: flex;
+    
+    width: 100%;
+    height: 90%;
+}
+
+.contacts_left {
+    width: 100%;
+    min-height: 100%;
+    margin: 2.5rem 0 0 3rem;
+}
+
+.contacts_right {
+    width: 100%;
+}
+
+.contacts_logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.contacts_logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contacts_logo p {
+    padding-left: 4px;
+}
+#Contacts .contact_us {
+    margin: 1rem 0 0 0
+}
+
+.contact_us h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.email {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    min-height: 4.0em;
+    width: 27em;
+    border: 2px solid black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    align-items: center;
+}
+
+.email a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.email #email {
+    display: inline-block;
+    padding-left: 1em;
+}
+
+.email #arrow {
+    display: inline-block;
+   color: white;
+   background-color: black;
+   border-radius: 100%;    
+   margin-left: 10.3em;
+   padding: 1em 1.2em 1em 1.2em;
+}
+
+.contacts_right {
+    display: flex;
+    margin: 3rem 0 0 0;
+    width: 100%;
+}
+
+.contacts_right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contacts_right div {
+    margin: 0 8rem 0 0;
+}
+
+.contacts_right #Social {
+    margin: 0;
+}
+
+.contacts_right h2 {
+    margin-bottom: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.contacts_right ul {
+    list-style-type: none;
+}
+
+.contacts_right li {
+    margin: 0.9em 0 0 0.1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contacts_right li:hover {
+    font-weight: 700;
+}
+
+.line {
+    height: 0.1px;
+    width: 95vw;
+    background-color: black;
+    align-self: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bottom .terms {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 75em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding-top: 0.5em;
+}
