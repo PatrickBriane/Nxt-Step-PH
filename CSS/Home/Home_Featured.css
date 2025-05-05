@@ -28,6 +28,12 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-style: italic;
+    transition: 0.3s;
+}
+
+.featured_text a:hover {
+    font-weight: 600;
+    color: #636363;
 }
 
 .featured_background {
