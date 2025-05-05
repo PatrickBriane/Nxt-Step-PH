@@ -61,23 +61,24 @@
         height: 100%;
        }
 
-       #products-area .shoe button {
+       #products-area .heart {
         background: none;
         color: inherit;
         border: none;
         position: absolute;
         align-self: end;
-        margin: 0.625rem 0.75rem 0 0;
+        margin: 1.313rem 1.375rem 0 0;
+        position: absolute;
        }
 
-       #products-area .shoe .favorite {
+       #products-area .heart .favorite {
         width: 1.625rem;
         height: auto;
         border-radius: 50px;
         transition: 0.5s;
        }
 
-       #products-area .shoe .favorite:hover {
+       #products-area .heart .favorite:hover {
         box-shadow: 0 0 10px 2px rgb(255, 91, 91);
        }
 
@@ -178,11 +179,11 @@
             <div class="navigation">
                 <ul>
                     <li><a href="HomePage.html">Home</a></li>
-                    <li><a href="">All Products</a></li>
-                    <li><a href="">New Arrivals</a></li>
-                    <li><a href="">Nike</a></li>
-                    <li><a href="">Reebok</a></li>
-                    <li><a href="">New Balance</a></li>
+                    <li><a href="#" class="brand-filter" data-brand="All" data-title="All Products">All Products</a></li>
+                    <li><a href="#" class="new-arrivals-filter" data-title="New Arrivals">New Arrivals</a></li>
+                    <li><a href="#" class="brand-filter" data-brand="Nike" data-title="Nike Products">Nike</a></li>
+                    <li><a href="#" class="brand-filter" data-brand="Reebok" data-title="Reebok Products">Reebok</a></li>
+                    <li><a href="#" class="brand-filter" data-brand="New Balance" data-title="New Balance Products">New Balance</a></li>
                 </ul>
             </div>
         </div>
