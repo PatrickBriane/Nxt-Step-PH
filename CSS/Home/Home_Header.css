@@ -1,169 +1,166 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-header li,header a,header .Search_Bar{
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #ffffff;
-    text-decoration: none;
+header li,
+header a,
+header .Search_Bar {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-html, body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #131313;
-    padding: 0 1%;
-    border-top: 1rem solid black;
-    border-bottom: 1px solid white ;
-    width: 100%;
-    height: 75px;  
-    overflow: hidden;
-    z-index: 100;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+  padding: 0 1%;
+  border-top: 1rem solid black;
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+  z-index: 100;
 }
 
-.Logo{
-    width: auto;
-    height:200%;
-    object-fit: contain;
+.Logo {
+  width: auto;
+  height: 200%;
+  object-fit: contain;
 }
 
-.Navigation{
-    list-style: none;
-    padding-left: 20em;
+.Navigation {
+  list-style: none;
+  padding-left: 20em;
 }
 
 .Navigation li {
-    display: inline-block;
-    padding: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 .Search_Bar {
-    z-index: 10;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    border: none;
-    border-radius: 50px;
-    padding: 7px;
-    padding-left: 40px;
-    width: 300px;
-    background-image: url('../Images/search.png');
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    color: black;
+  z-index: 10;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border: none;
+  border-radius: 50px;
+  padding: 7px;
+  padding-left: 40px;
+  width: 300px;
+  background-image: url("../Images/search.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  color: black;
 }
 
-.RightSide{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding-right: 30px;
-    
+.RightSide {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 30px;
 }
 
-.RightSide .Search_Bar{
-    margin-right: 50px;
+.RightSide .Search_Bar {
+  margin-right: 50px;
 }
 
 .Icon {
-    height: 29px;
-    width: auto;
-    
+  height: 29px;
+  width: auto;
 }
 
 @media (max-width: 1395px) {
-    .Navigation{
-        list-style: none;
-        padding-left: 15em;
-    }
+  .Navigation {
+    list-style: none;
+    padding-left: 15em;
+  }
 
-    .RightSide .Search_Bar {
-        margin-right: 45px;
-    }
+  .RightSide .Search_Bar {
+    margin-right: 45px;
+  }
 }
 
 @media (max-width: 1313px) {
-    .Navigation{
-        list-style: none;
-        padding-left: 10em;
-    }
+  .Navigation {
+    list-style: none;
+    padding-left: 10em;
+  }
 
-    .RightSide .Search_Bar {
-        margin-right: 40px;
-    }
+  .RightSide .Search_Bar {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 1232px) {
-    .Navigation{
-        list-style: none;
-        padding-left: 5em;
-    }
+  .Navigation {
+    list-style: none;
+    padding-left: 5em;
+  }
 
-    .RightSide .Search_Bar {
-        margin-right: 35px;
-    }
+  .RightSide .Search_Bar {
+    margin-right: 35px;
+  }
 }
 
 @media (max-width: 1150px) {
-    .Navigation{
-        list-style: none;
-        padding-left: 3em;
-    }
+  .Navigation {
+    list-style: none;
+    padding-left: 3em;
+  }
 
-    .RightSide .Search_Bar {
-        margin-right: 30px;
-    }
+  .RightSide .Search_Bar {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 1117px) {
-    .Logo{
-        height:175%;
-    }
-    
-    
-    .Navigation li {
-        display: inline-block;
-        padding: 0 15px;
-    }
-    
-    .RightSide .Search_Bar {
-        width: 280px;
-        margin-right: 25px;
-    }
+  .Logo {
+    height: 175%;
+  }
+
+  .Navigation li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .RightSide .Search_Bar {
+    width: 280px;
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 1017px) {
+  header {
+    height: 70px;
+  }
+  .Logo {
+    height: 155%;
+  }
 
-    header {
-        height: 70px;  
-    }
-    .Logo{
-        height:155%;
-    }
-
-    .RightSide .Search_Bar {
-        width: 250px;
-        margin-right: 20px;
-    }
+  .RightSide .Search_Bar {
+    width: 250px;
+    margin-right: 20px;
+  }
 }
 @media (max-width: 1017px) {
-
-    header {
-        height: 65px;  
-    }
-    .Logo{
-        height:150%;
-    }
-
+  header {
+    height: 65px;
+  }
+  .Logo {
+    height: 150%;
+  }
 }
