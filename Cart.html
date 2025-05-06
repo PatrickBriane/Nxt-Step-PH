@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth@0,75..100;1,75..100&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS\Products\header.css">
+    <link rel="stylesheet" href="CSS/Products/cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NxtStep PH Products</title>
+    <style>
+
+        #intro .cart-header {
+            display: flex;
+            align-items: center;
+        }
+        #intro img {
+            width: 4.688rem;
+            height: 4.375rem;
+            max-width: 100%;
+            margin: 0 0 0 1.5rem;
+        }
+
+        #cart-area {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            }
+
+
+    .container {
+      display: flex;
+      gap: 3rem;
+      max-width: 1440px;
+      width: 100%;
+      margin: 2rem auto 0 auto;
+    flex-wrap: nowrap;
+    }
+
+    #cart-items {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.cart-item {
+    width: 100%;
+  max-width: 100%;
+    height: 10.625rem;
+  position: relative;
+  background: #F8F8F8;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 10.625rem;
+  box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.278);
+  flex-shrink: 0;
+}
+
+
+    .cart-item .image-frame {
+      width: 11.605rem;
+      height: 8.716rem;
+      overflow: hidden;
+      border-radius: 4.13px 4.13px 0 0;
+      margin-right: 2rem;
+      background-color: #E6E6E6;
+    }
+
+    .cart-item img {
+        width: 11.605rem;
+        height: 8.716rem;;
+    }
+
+    .cart-info {
+        display: flex;
+  flex-direction: column;
+    }
+
+    .cart-info small {
+        font-family: 'lato', sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+    }
+
+    .cart-info h4 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+      font-family: 'lato', sans-serif;
+        font-weight: 600;
+        font-size: 1.169rem;
+        max-height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    }
+
+    .cart-info p {
+      margin: 2px 0 0 0;
+        font-size: 1.2rem;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+    }
+
+    .quantity button {
+      padding: 3px 9px;
+      font-size: 1rem;
+    }
+
+    .remove {
+      color: #ff4d4d;
+      cursor: pointer;
+      font-size: 0.95rem;
+      align-self: end;
+      margin: 0 0.5rem 0 auto;
+    }
+
+    .order-summary {
+      flex: 1;
+      background: #f8f8f8;
+      padding: 2rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.278);
+    }
+
+    .order-summary h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a52e1;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1.5rem 0;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .note {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    </style>
+</head>
+<body>
+    <header id="products-header">
+
+        <div class="image">
+            <img src="Images/wwwwdesign 1png.png" alt="">
+        </div>
+
+        <div class="middle-header">
+
+            <div class="search">
+                <input class="search-bar" type="text" name="" id="" placeholder="Search">
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="Products.html" class="brand-filter" data-brand="All" data-title="All Products">All Products</a></li>
+                    <li><a href="New Arrivals.html">New Arrivals</a></li>
+                    <li><a href="Products.html?brand=Nike" class="brand-filter" data-brand="Nike" data-title="Nike Products">Nike</a></li>
+                    <li><a href="Products.html?brand=Reebok" class="brand-filter" data-brand="Reebok" data-title="Reebok Products">Reebok</a></li>
+                    <li><a href="Products.html?brand=New Balance" class="brand-filter" data-brand="New Balance" data-title="New Balance Products">New Balance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="icons">
+            <a href=""><img src="Images/favorite.png" alt=""></a>
+            <a href=""><img src="Images/Add to cart 1.png" alt=""></a>
+        </div>
+    </header>
+
+    <div id="intro">
+        <div class="cart-header">
+            <img src="Images/cartdesign 1.png" alt="">
+            <h1>My Cart</h1>
+        </div>
+        <div>
+            <p>Review your items and proceed to checkout.</p>
+        </div>
+        
+        
+    </div>
+
+    <section id="cart-area">
+
+
+        <div class="container">
+    <div id="cart-items">
+    </div>
+
+    <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-line"><span>Subtotal</span><span id="subtotal">₱0</span></div>
+        <div class="summary-line"><span>Shipping</span><span>₱150</span></div>
+        <hr />
+        <div class="summary-line"><strong>Total</strong><strong id="total">₱0</strong></div>
+        <button class="checkout-btn">Proceed To Checkout</button>
+        <p class="note">
+          Proceeding with Checkout only directs you to our official page where you can message us for your purchase.<br><br>
+          We Ship Nationwide<br>
+          Mode of Payment: Bank transfer or Gcash
+        </p>
+      </div>
+</div>
+
+
+    </section>
+    
+    <script>
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+        let subtotal = 0;
+      
+        cart.forEach((item, index) => {
+          const priceNum = parseFloat(item.price.replace(/[^\d.]/g, '')) || 0;
+          subtotal += priceNum * item.quantity;
+      
+          const cartItem = document.createElement('div');
+          cartItem.className = 'cart-item';
+          cartItem.innerHTML = `
+            <div class="image-frame">
+              <img src="${item.image || item.detailImage}" alt="${item.name}">
+            </div>
+            <div class="cart-info">
+              <small>${item.brand}</small>
+              <h4>${item.name}</h4>
+              <p>Size: ${item.size}</p>
+              <p>₱${priceNum}</p>
+              <div class="quantity">
+                <button onclick="updateQuantity(${index}, -1)">-</button>
+                <span>${item.quantity}</span>
+                <button onclick="updateQuantity(${index}, 1)">+</button>
+              </div>
+            </div>
+            <div class="remove" onclick="removeItem(${index})">🗑 Remove</div>
+          `;
+          cartItemsContainer.appendChild(cartItem);
+        });
+      
+        document.getElementById('subtotal').textContent = `₱${subtotal}`;
+        document.getElementById('total').textContent = `₱${subtotal + 150}`;
+      
+        function removeItem(index) {
+          cart.splice(index, 1);
+          localStorage.setItem('cart', JSON.stringify(cart));
+          location.reload();
+        }
+      
+        function updateQuantity(index, delta) {
+          cart[index].quantity += delta;
+          if (cart[index].quantity <= 0) {
+            removeItem(index);
+          } else {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            location.reload();
+          }
+        }
+      </script>
+
+</body>
+</html>

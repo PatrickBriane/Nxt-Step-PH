@@ -37,7 +37,8 @@
         </div>
         <div class="icons">
             <a href=""><img src="Images/favorite.png" alt=""></a>
-            <a href=""><img src="Images/Add to cart 1.png" alt=""></a>
+            <a href="cart.html"><img src="Images/Add to cart 1.png" alt="Cart"></a>
+
         </div>
     </header>
 
@@ -118,7 +119,29 @@ document.querySelector('.back-btn').addEventListener('click', () => {
     window.history.back();
 });
 
+// ✅ Add to Cart logic
+document.querySelector('.cart-btn').addEventListener('click', () => {
+        const selectedSize = document.querySelector('input[name="choice"]:checked');
+        if (!selectedSize) {
+            alert('Please select a size before adding to cart.');
+            return;
+        }
+  
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+        const item = {
+            ...product,
+            size: selectedSize.id,
+            quantity: 1
+        };
+  
+        cart.push(item);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Item added to cart!');
+    });
+
       </script>
+  
   
       
       
