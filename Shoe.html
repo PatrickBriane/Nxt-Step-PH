@@ -51,7 +51,7 @@
       
           <div class="card-right">
             <div class="card-right-top">
-                <button class="back-btn">Back</button>
+                <button class="back-btn" onclick="goBack()">Back</button>
                 <h2 class="shoe-brand" >Reebok</h2>
                 <h1 class="shoe-name">Jogger Lite Black</h1>
                 <p class="price shoe-price">₱1,090</p>
@@ -114,8 +114,13 @@ if (product) {
     document.querySelector('.shoe-price').textContent = product.price;
 } 
 
+document.querySelector('.back-btn').addEventListener('click', () => {
+    window.history.back();
+});
 
       </script>
+  
+      
       
 </body>
 </html>

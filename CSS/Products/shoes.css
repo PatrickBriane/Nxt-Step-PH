@@ -125,17 +125,30 @@
   max-width: 22em;
   border: 2px solid #000;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(241, 241, 241);
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #474747;
+  color: #3c3c3c;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   cursor: pointer;
   white-space: nowrap;
+  transition: 0.3s;
+}
+
+.actions .cart-btn:hover {
+  background-color: #d8f9fd;
+  box-shadow: 0 0 10px 3px rgba(70, 167, 246, 0.4);
+  color: rgb(42, 42, 42);
+}
+
+.actions .wishlist-btn:hover {
+  background-color: #fdc9c9;
+  box-shadow: 0 0 10px 3px rgba(240, 144, 144, 0.667);
+  color: #ffffff;
 }
 
 .actions button .actions-heart {
@@ -158,6 +171,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  font-size: 1.55rem;
+  box-shadow: 0 0 10px 1px black;
 }
 
 hr {
@@ -202,6 +221,11 @@ input[type="radio"] {
   justify-content: center;
   font-weight: bold;
   text-align: center;
+}
+
+.choices:hover {
+  background-color: #fcfafa;
+  border-color: #000000;
 }
 
 input[type="radio"]:checked + label {

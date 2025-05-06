@@ -4,7 +4,7 @@ const products = [
     brand: "Reebok",
     name: "Jogger Lite Black",
     price: "₱1,090",
-    priceValue: 1090,
+    pricevalue: 1090,
     isNew: true,
   },
   {
@@ -38,8 +38,7 @@ const products = [
     price: "₱1,090",
     pricevalue: 1090,
     isNew: true,
-  },
-];
+  } ]
 
 let productsHTML = "";
 

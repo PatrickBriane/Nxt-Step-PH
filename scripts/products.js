@@ -298,3 +298,5 @@ shoeCard.addEventListener("click", () => {
   localStorage.setItem("selectedProduct", JSON.stringify(product));
   window.location.href = "Shoe.html";
 });
+
+
