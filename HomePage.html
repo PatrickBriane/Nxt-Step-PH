@@ -30,7 +30,6 @@
             
         <div class="RightSide">
             <input class="Search_Bar" type="text" placeholder="Search">
-            <a href="#"><img class="Icon" src="Images/favorite.png" alt="Favorite"></a>
             <a href="cart.html"><img class="Icon" src="Images/Add to cart 1.png" alt="Cart"></a>
         </div>
 
@@ -122,7 +121,7 @@
 
             <div class="arrivals_choices">
                     <div class="arrivals_wrapper">
-                        <a href="Home Shoes/Jogger Lite Black.html">
+                        <a href="Shoe.html" class="js-product-link" data-product='{"id":"jogger-lite-black","image":"Images/Shoes/Jogger Lite Black 2.png","brand":"Reebok","name":"Jogger Lite Black","price":"₱1,090","priceValue":1090,"isNew":true}'>
                             <div class="arrivals_shoe_container">
                                 <div class="arrivals_shoe_img">
                                     <div class="arrivals_shoe_img_box">
@@ -137,15 +136,10 @@
                                         </div>
                             </div>
                         </a>
-                        <div class="animated_cart">
-                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
-                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
-                            <img class="cart_icon" src="Images/cart.png" alt="">
-                        </div>
                     </div>
 
                     <div class="arrivals_wrapper">
-                        <a href="Home Shoes/Jogger Lite Burgundy.html">
+                        <a href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Jogger Lite Burgundy2.png","brand":"Reebok","name":"Jogger Lite Burgundy","price":"₱1,090","pricevalue":1090,"isNew":true}'>
                             <div class="arrivals_shoe_container">
                                 <div class="arrivals_shoe_img">
                                     <div class="arrivals_shoe_img_box">
@@ -160,15 +154,11 @@
                                         </div>
                             </div>
                         </a>
-                        <div class="animated_cart">
-                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
-                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
-                            <img class="cart_icon" src="Images/cart.png" alt="">
-                        </div>
+                    
                     </div>
 
                     <div class="arrivals_wrapper">
-                        <a href="Home Shoes/Stridium 2.0 grey.html">
+                        <a href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Stridium 2.0 “Grey”.png","brand":"Reebok","name":"Stridium 2.0 “Grey”","price":"₱1,790","pricevalue":1790,"isNew":true}'>
                             <div class="arrivals_shoe_container">
                                 <div class="arrivals_shoe_img">
                                     <div class="arrivals_shoe_img_box">
@@ -183,11 +173,6 @@
                                         </div>
                             </div>
                         </a>
-                        <div class="animated_cart">
-                            <img class="cart_shoe_hover" src="Images/cart shoe hover.png" alt="">
-                            <img class="cart_plus_sign" src="Images/cart hover.png" alt="">
-                            <img class="cart_icon" src="Images/cart.png" alt="">
-                        </div>
                     </div>
             </div>
         </div>
@@ -205,7 +190,7 @@
             <div class="featured_container">
                 
                 <div class="blur"></div>
-                <a href="Home Shoes/Jordan 38 “White Metallic Gold.html">
+                <a href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Jordan 38 “White Metallic Gold”.png","detailImage":"Images/Shoes/7 1 (1).png","brand":"Nike","name":"Jordan 38 “White Metallic Gold”","price":"₱3,890","pricevalue":3890,"isNew":false}'>
                     <div>
                         <div class="featured_shoe">
                             <img src="Images/Shoes/Jordan 38.png" alt="">
@@ -223,7 +208,7 @@
             <div class="featured_container">
 
                 <div class="blur"></div>
-                <a href="Home Shoes/Nike Impact 3 “Black Grey”.html">
+                <a href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Nike Impact 3 “Black Grey”2.png","detailImage":"Images/Shoes/6 1 (2).png","brand":"Nike","name":"Nike Impact 3 “Black Grey”","price":"₱1,690","pricevalue":1690,"isNew":false}'>
                     <div>
                         <div class="featured_shoe">
                             <img src="Images/Shoes/Nike Impact 3 “Black Grey”.png" alt="">
@@ -241,7 +226,7 @@
             <div class="featured_container">
 
                 <div class="blur"></div>
-                <a href="Home Shoes/Nike KD Trey 5 X “Green Strike”.html">
+                <a href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Nike KD Trey 5 X “Green Strike”.png","detailImage":"Images/Shoes/8 1 (2).png","brand":"Nike","name":"Nike KD Trey 5 X “Green Strike”","price":"₱1,790","pricevalue":1790,"isNew":false}'>
                     <div>
                         <div class="featured_shoe">
                             <img src="Images/Shoes/Nike KD Trey 5 X “Green Strike.png" alt="">
@@ -350,5 +335,15 @@
     
     </section>
     
+    <script>
+  document.querySelectorAll(".js-product-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const productData = e.currentTarget.dataset.product;
+      localStorage.setItem("selectedProduct", productData);
+    });
+  });
+</script>
+
+
 </body>
 </html>

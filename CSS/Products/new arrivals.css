@@ -149,3 +149,29 @@
     font-weight: 400;
   }
 }
+
+.size-selector {
+  margin: 0 0 10rem 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.size-dropdown {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  appearance: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+  
+}
+
+.size-dropdown:hover,
+.size-dropdown:focus {
+  border-color: #2563eb;
+}
+

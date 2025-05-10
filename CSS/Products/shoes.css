@@ -115,14 +115,15 @@
   gap: 1rem;
   margin-top: 2rem;
   justify-content: space-between;
+  justify-content: center;
 }
 
 .actions button {
   flex: 1;
   padding: 0.2rem 0.5rem;
   width: 23vw;
-  min-width: 12em;
-  max-width: 22em;
+  min-width: 10em;
+  max-width: 46rem;
   border: 2px solid #000;
   border-radius: 10px;
   background-color: rgb(241, 241, 241);
@@ -151,11 +152,6 @@
   color: #ffffff;
 }
 
-.actions button .actions-heart {
-  width: 1.6rem;
-  height: auto;
-}
-
 .actions button .actions-cart {
   width: 2rem;
 }
@@ -172,6 +168,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  width: 46rem;
 }
 
 .buy-btn:hover {

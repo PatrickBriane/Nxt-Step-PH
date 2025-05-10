@@ -64,9 +64,15 @@ products.forEach((product) => {
                 </div>
             </a>
 
-            <button class="heart">
-                <img class="favorite" src="Images/Heart Icon (button).png" alt="">
-            </button>
+            <div class="size-selector">
+              <select class="size-dropdown">
+                <option value="">Select size</option>
+                <option value="7.5">7.5</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="10.5">10.5</option>
+              </select>
+            </div>
 
             <button class="AddtoCart">
                 <div class="cart">
@@ -79,6 +85,32 @@ products.forEach((product) => {
 });
 
 document.querySelector(".js-product-area").innerHTML = productsHTML;
+
+document.querySelectorAll(".AddtoCart").forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const productWrapper = button.closest(".product-wrapper");
+    const sizeDropdown = productWrapper.querySelector(".size-dropdown");
+    const selectedSize = sizeDropdown.value;
+
+    if (!selectedSize) {
+      alert("Please select a size before adding to cart.");
+      return;
+    }
+
+    const product = products[index];
+    const cartItem = {
+      ...product,
+      size: selectedSize,
+      quantity: 1,
+    };
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(`${product.name} (Size ${selectedSize}) added to cart!`);
+  });
+});
 
 document.querySelectorAll(".brand-filter").forEach((link) => {
   link.addEventListener("click", (e) => {
