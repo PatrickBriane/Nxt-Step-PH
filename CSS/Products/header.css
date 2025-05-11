@@ -24,8 +24,8 @@ button {
 }
 
 #products-header .image {
-  width: 10.875em;
-  height: 100%;
+  width: 10.875rem;
+  height: 7.188rem;
   margin: 0 3.188rem 0 1.5rem;
 }
 
@@ -75,4 +75,96 @@ button {
 
 #products-header .icons img {
   padding: 0 0 0 1em;
+}
+
+@media (max-width: 1455px) {
+  .search-bar {
+ 
+  padding: 0.5em 58em 0.5em 2.5em;
+  
+}
+}
+
+@media (max-width: 1300px) {
+  .search-bar {
+ 
+  padding: 0.5em 47em 0.5em 2.5em;
+  
+}
+}
+
+@media (max-width: 1150px) {
+  .search-bar {
+ 
+  padding: 0.5em 35em 0.5em 2.5em;
+  
+}
+
+#products-header .navigation li,
+#products-header .navigation a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  text-decoration: none;
+  color: #cbcbcb;
+  padding: 0.875em 1em 0 0;
+}
+}
+
+@media (max-width: 1000px) {
+  .search-bar {
+ 
+  padding: 0.5em 26em 0.5em 2.5em;
+  
+}
+
+#products-header .navigation li,
+#products-header .navigation a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  text-decoration: none;
+  color: #cbcbcb;
+  padding: 0.875em 1em 0 0;
+  font-size: 0.8rem;
+}
+
+#products-header .middle-header {
+  margin: 1em 1em 0 0;
+}
+
+#products-header .image {
+  width: 8.875rem;
+  height: 5.188rem;
+  margin: 0 3.188rem 0 1.5rem;
+}
+
+}
+
+@media (max-width: 810px) {
+  .search-bar {
+ 
+  padding: 0.5em 15em 0.5em 2.5em;
+  
+}
+
+#products-header .image {
+  width: 6.875rem;
+  height: 3.188rem;
+  margin: 0 1.188rem 0 1rem;
+}
+
+#products-header .navigation li,
+#products-header .navigation a {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  text-decoration: none;
+  color: #cbcbcb;
+  padding: 0.875em 0.8em 0 0;
+  font-size: 0.7rem;
+}
 }

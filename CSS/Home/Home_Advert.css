@@ -149,7 +149,7 @@
 
 .Brands {
   display: flex;
-  height: 800px;
+  height: 50rem;
   color: white;
   flex-direction: column;
   align-items: center;
@@ -182,7 +182,7 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  gap: 100px;
+  gap: 6.25rem;
   padding-top: 40px;
 }
 
@@ -192,16 +192,17 @@
   align-items: center;
   background-color: white;
   border-radius: 20px;
-  width: 354px;
-  height: 516px;
+  width: 100%;
+  max-width: 22.125rem;
+  height: 32.25rem;
   overflow: hidden;
   transition: 0.5s;
   position: relative;
 }
 
 .Brands .choices .shoe_container .shoe {
-  width: 336px;
-  height: 448px;
+  width: 21em;
+  height: 28em;
   margin: 8px auto auto auto;
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
@@ -215,7 +216,7 @@
 
 .brand_name {
   font-family: "Inter", sans-serif;
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 800;
   color: black;
   margin: auto;
@@ -392,5 +393,146 @@
     padding: 14px;
     width: 120px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 987px) {
+  .left_side h1 {
+    font-size: 4rem;
+  }
+
+  .right_side img {
+    width: 500px;
+    right: 20px;
+    bottom: 120px;
+  }
+
+  .advert_tag {
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-section {
+    display: flex;
+    height: 500px;
+    width: 100%;
+  }
+  .left_side h1 {
+    font-size: 3rem;
+  }
+
+  .right_side img {
+    width: 420px;
+    right: 10px;
+    bottom: 50px;
+  }
+
+  .advert_tag {
+    bottom: 25%;
+    width: 90%;
+    height: 60px;
+  }
+
+  .advert_tag h1 {
+    font-size: 15px;
+  }
+
+  .advert_tag p {
+    font-size: 12px;
+  }
+
+  .right_side .radient {
+    top: 130px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .left_side p {
+    font-size: 15px;
+  }
+
+  .first_buttons {
+    margin-top: 20px;
+  }
+
+  .page1_Button1 {
+    padding: 10px;
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .page1_Button2 {
+    padding: 10px;
+    width: 100px;
+    font-size: 10px;
+  }
+}
+
+/* Brands Area */
+
+@media (max-width: 1300px) {
+  .Brands {
+    height: 43.75rem;
+  }
+
+  .Brands .choices {
+    gap: 5rem;
+  }
+
+  .Brands .choices .shoe_container {
+    width: 100%;
+    max-width: 18.125rem;
+    height: 27.25rem;
+  }
+
+  .Brands .choices .shoe_container .shoe {
+    width: 17em;
+  }
+
+  .brand_name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .Brands {
+    height: 38rem;
+  }
+  .Brands .choices {
+    gap: 3rem;
+  }
+
+  .Brands .choices .shoe_container {
+    width: 100%;
+    max-width: 14.825rem;
+    height: 22.25rem;
+  }
+
+  .Brands .choices .shoe_container .shoe {
+    width: 14em;
+  }
+}
+
+@media (max-width: 850px) {
+  .Brands {
+    height: 32.25rem;
+  }
+  .Brands .choices {
+    gap: 1.875rem;
+  }
+
+  .Brands .choices .shoe_container {
+    width: 100%;
+    max-width: 10.825rem;
+    height: 18.25rem;
+  }
+
+  .Brands .choices .shoe_container .shoe {
+    width: 10em;
+  }
+
+  .brand_name {
+    font-size: 1.5rem;
   }
 }

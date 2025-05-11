@@ -141,14 +141,109 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 .bottom .terms {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 75em;
+  justify-content: space-between;
+  width: 98%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding-top: 0.5em;
+  white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+  .contacts_left {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contacts_right div {
+    margin: 0 6rem 0 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts_left {
+    width: 70%;
+  }
+
+  .email {
+    width: 26em;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .email #arrow {
+    margin-left: 9.4em;
+    padding: 0.8em 1em 0.8em 1em;
+  }
+
+  .contacts_right div {
+    margin: 0 4rem 0 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .contacts_left {
+    width: 90%;
+  }
+  .contacts_right h2 {
+    margin-bottom: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .contacts_right li {
+    margin: 0.9em 0 0 0.1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  .contacts_right div {
+    margin: 0 3rem 0 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts_left {
+    width: 150%;
+  }
+  .contacts_right {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  .contacts_right div,
+  .contacts_right #Social {
+    margin: 0 0 0 2rem;
+  }
+
+  .contacts_right #Social,
+  .contacts_right #Categories {
+    margin: 1em 0 0.5em 2rem;
+  }
+
+  .contacts_right li {
+    margin: 0.3em 0 0 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .contacts_right h2 {
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
 }

@@ -61,7 +61,7 @@ header {
   padding: 7px;
   padding-left: 40px;
   width: 300px;
-  background-image: url("../Images/search.png");
+  background-image: url("../../Images/search.png");
   background-repeat: no-repeat;
   background-position: 15px center;
   color: black;
@@ -162,5 +162,49 @@ header {
   }
   .Logo {
     height: 150%;
+  }
+}
+
+@media (max-width: 897px) {
+  .RightSide .Search_Bar {
+    padding: 5px;
+    padding-left: 40px;
+    margin-right: 8px;
+    width: 230px;
+  }
+
+  .Navigation li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .Navigation li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 60px;
+  }
+  .Logo {
+    height: 140%;
+  }
+
+  .RightSide .Search_Bar {
+    padding: 4px;
+    padding-left: 40px;
+    width: 190px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+  }
+
+  .Navigation li {
+    display: inline-block;
+    padding: 0 8px;
+  }
+
+  .Navigation li a {
+    font-size: 0.8rem;
   }
 }

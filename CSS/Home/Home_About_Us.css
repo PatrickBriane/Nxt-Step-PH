@@ -1,6 +1,6 @@
 #About_Us {
   width: 100%;
-  min-height: 53rem;
+  height: 53rem;
   background-image: url(../../Images/Reviews\ Section\ background.png);
   background-size: cover;
   display: flex;
@@ -18,7 +18,8 @@
 }
 
 .Reviews img {
-  width: 99%;
+  width: 41.827rem;
+  height: 45.738rem;
   margin: 0 0 6.25rem 0;
 }
 
@@ -90,4 +91,258 @@
   font-style: italic;
   font-weight: 100;
   width: 80%;
+}
+
+@media (max-width: 1480px) {
+  #About_Us {
+    height: 53rem;
+  }
+  .Reviews {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Reviews img {
+    width: 41.827rem;
+    height: 45.738rem;
+    margin: 0 0 6.25rem 0;
+  }
+
+  #About_Us .navigation {
+    min-height: 9.438rem;
+  }
+
+  #About_Us .navlinks {
+    font-size: 1.421rem;
+    padding-left: 0.8em;
+  }
+
+  .navlinks li {
+    padding-right: 4.375rem;
+  }
+
+  #About_Us #topic {
+    margin-top: 0.8em;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1.5rem;
+  }
+
+  #About_Us .text h1 {
+    font-size: 2.76rem;
+    width: 70%;
+    margin: 0.8em 0 0.8em 0;
+  }
+
+  .text #description {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Reviews img {
+    width: 38.827rem;
+    height: 43.738rem;
+    margin: 0 0 6.25rem 1rem;
+  }
+
+  #About_Us .navlinks {
+    font-size: 1.2rem;
+  }
+
+  .navlinks li {
+    padding-right: 3.6rem;
+  }
+
+  #About_Us #topic {
+    margin-top: 0.5em;
+  }
+
+  #About_Us .text h1 {
+    font-size: 2.3rem;
+    width: 80%;
+    margin: 0.8em 0 0.8em 0;
+  }
+
+  .text #description {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #About_Us {
+    width: 100%;
+    height: 49rem;
+  }
+  .Reviews img {
+    width: 35.827rem;
+    height: 40.738rem;
+    margin: 0 0 6.25rem 1rem;
+  }
+
+  #About_Us .information {
+    height: 5rem;
+  }
+
+  #About_Us .navlinks {
+    font-size: 1.1rem;
+  }
+
+  .navlinks li {
+    padding-right: 2.5rem;
+  }
+
+  #About_Us #topic {
+    margin-top: -0.4rem;
+    padding: 0.4em 0.9em 0.4em 0.9em;
+    font-size: 1.4rem;
+  }
+
+  #About_Us .text h1 {
+    font-size: 2.2rem;
+    width: 83%;
+  }
+
+  .text #description {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  #About_Us {
+    width: 100%;
+    height: 45rem;
+  }
+
+  .Reviews {
+    width: 70%;
+  }
+
+  .Reviews img {
+    width: 31.827rem;
+    height: 36.738rem;
+    margin: 0 0 6.25rem 1rem;
+  }
+
+  #About_Us .navlinks {
+    font-size: 1rem;
+    margin-top: -2rem;
+  }
+
+  .navlinks li {
+    padding-right: 1.6rem;
+  }
+
+  #About_Us #topic {
+    margin-top: -5rem;
+    padding: 0.4em 0.9em 0.4em 0.9em;
+    font-size: 1.4rem;
+  }
+
+  #About_Us .text h1 {
+    font-size: 1.9em;
+    width: 89%;
+    margin: 0.6em 0 0.6em 0;
+  }
+
+  .text #description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #About_Us {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .Reviews {
+    width: 60%;
+  }
+
+  .Reviews img {
+    width: 26.827rem;
+    height: 31.738rem;
+    margin: 0 0 6.25rem 1rem;
+  }
+
+  #About_Us .navigation {
+    display: flex;
+    min-height: 6.838rem;
+    align-items: center;
+  }
+
+  #About_Us .navlinks {
+    font-size: 0.8rem;
+    margin-top: 0rem;
+  }
+
+  .navlinks li {
+    padding-right: 1.3rem;
+  }
+
+  #About_Us #topic {
+    margin-top: 0rem;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1rem;
+  }
+
+  #About_Us .text h1 {
+    font-size: 1.6em;
+    width: 91%;
+    margin: 0.6em 0 0.6em 0;
+  }
+
+  .text #description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  #About_Us {
+    width: 100%;
+    height: 33rem;
+  }
+
+  .Reviews {
+    width: 60%;
+  }
+
+  .Reviews img {
+    width: 20.827rem;
+    height: 25.738rem;
+    margin: 0 0 6.25rem 1rem;
+  }
+
+  #About_Us .navigation {
+    display: flex;
+    min-height: 5.5rem;
+    align-items: center;
+  }
+
+  #About_Us .navlinks {
+    font-size: 0.685rem;
+    margin-top: 0rem;
+  }
+
+  .navlinks li {
+    padding-right: 1rem;
+  }
+
+  #About_Us #topic {
+    margin-top: 0rem;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 0.9rem;
+  }
+
+  #About_Us .text h1 {
+    font-size: 1.3em;
+    width: 91%;
+    margin: 0.7em 0 0.6em 0;
+  }
+
+  .text #description {
+    font-size: 1.1rem;
+  }
 }

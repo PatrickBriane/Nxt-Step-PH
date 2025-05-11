@@ -55,7 +55,7 @@
             <div class="radient"></div>
                 <img src="Images/Shoes/NikeFly.png" usemap="#image-map" alt="">
                     <map name="image-map">
-                        <area target="" alt="" title="" href="" coords="6,509,14,551,50,575,114,560,196,540,273,506,333,495,471,465,555,437,655,384,710,348,690,320,668,291,640,248,621,200,601,154,582,134,562,120,538,123,520,140,488,138,451,148,422,156,400,163,394,183,401,212,397,229,370,186,332,194,308,208,299,229,255,217,216,222,191,241,193,258,170,241,186,299,172,344,121,404,50,467,22,489" shape="poly">
+                        <area target="" alt="" title="" href="Shoe.html" class="js-product-link" data-product='{"image":"Images/Shoes/Nike Fly.By Mid 3 BlackWhite.png", "brand":"Nike", "name": "Nike Fly.By Mid 3 Black/White", "price": "₱1,090", "pricevalue": 1090, "isNew": true}' coords="6,509,14,551,50,575,114,560,196,540,273,506,333,495,471,465,555,437,655,384,710,348,690,320,668,291,640,248,621,200,601,154,582,134,562,120,538,123,520,140,488,138,451,148,422,156,400,163,394,183,401,212,397,229,370,186,332,194,308,208,299,229,255,217,216,222,191,241,193,258,170,241,186,299,172,344,121,404,50,467,22,489" shape="poly">
                     </map>
                     <div id="Advert_Site">
                         <div class="advert_tag">
@@ -335,14 +335,7 @@
     
     </section>
     
-    <script>
-  document.querySelectorAll(".js-product-link").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const productData = e.currentTarget.dataset.product;
-      localStorage.setItem("selectedProduct", productData);
-    });
-  });
-</script>
+    <script src="scripts/home.js"></script>
 
 
 </body>

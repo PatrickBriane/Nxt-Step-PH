@@ -1,6 +1,7 @@
 #Featured {
   display: flex;
-  min-height: 100vh;
+  width: 100%;
+  height: 50rem;
   background-color: #e8e8e8;
   flex-direction: column;
 }
@@ -61,12 +62,14 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 21em;
-  width: 30em;
+  height: 21rem;
+  width: 30rem;
   margin: 3.375em 0 0 0;
 }
 
 .featured_shoe img {
+  height: 23.938rem;
+  width: 23.875rem;
   margin-bottom: 1.625em;
   align-self: end;
   z-index: 100;
@@ -78,8 +81,8 @@
   display: flex;
   justify-content: center;
   background-color: #dadada;
-  height: 21em;
-  width: 30em;
+  height: 21rem;
+  width: 30rem;
   margin: 3.375em 0 0 0;
   filter: blur(3px);
   transition: 0.5s;
@@ -108,5 +111,240 @@
 
   .featured_shoe img {
     margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 1400px) {
+  #Featured {
+    height: 47rem;
+  }
+  .featured_shoe,
+  .blur {
+    height: 17rem;
+    width: 26rem;
+  }
+
+  .featured_background {
+    height: 28.188rem;
+  }
+
+  .featured_shoe img {
+    height: 20.938rem;
+    width: 20.875rem;
+    margin-bottom: 1.625em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1.548rem;
+  }
+}
+
+@media (max-width: 1275px) {
+  #Featured {
+    height: 44rem;
+  }
+  .featured_shoe,
+  .blur {
+    height: 15rem;
+    width: 23rem;
+  }
+
+  .featured_background {
+    height: 25.188rem;
+  }
+
+  .featured_shoe img {
+    height: 18.938rem;
+    width: 18.875rem;
+    margin-bottom: 1.625em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1.448rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  #Featured {
+    height: 41rem;
+  }
+
+  .featured_text h1 {
+    font-size: 2.7rem;
+  }
+
+  .featured_text a {
+    font-size: 1.5rem;
+  }
+
+  .featured_shoe,
+  .blur {
+    height: 14rem;
+    width: 20rem;
+    margin: 2.875em 0 0 0;
+  }
+
+  .featured_background {
+    height: 22.188rem;
+  }
+
+  .featured_shoe img {
+    height: 16.938rem;
+    width: 16.875rem;
+    margin-bottom: 1.625em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1.348rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #Featured {
+    height: 36rem;
+  }
+
+  .featured_text {
+    height: 7rem;
+    margin: 0 auto 1em auto;
+  }
+
+  .featured_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured_text a {
+    font-size: 1.4rem;
+  }
+
+  .featured_shoe,
+  .blur {
+    height: 13rem;
+    width: 18rem;
+    margin: 2.575em 0 0 0;
+  }
+
+  .featured_background {
+    height: 21.188rem;
+  }
+
+  .featured_shoe img {
+    height: 14.938rem;
+    width: 14.875rem;
+    margin-bottom: 1.125em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1.248rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #Featured {
+    height: 31rem;
+  }
+
+  .featured_text {
+    height: 6.8rem;
+    margin: 0 auto 1.4em auto;
+  }
+
+  .featured_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured_text a {
+    font-size: 1.4rem;
+  }
+
+  .featured_shoe,
+  .blur {
+    height: 11rem;
+    width: 16rem;
+  }
+
+  .featured_background {
+    height: 18.188rem;
+  }
+
+  .featured_shoe img {
+    height: 12.938rem;
+    width: 12.875rem;
+    margin-bottom: 1.625em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1.148rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #Featured {
+    height: 31rem;
+  }
+
+  .featured_text {
+    height: 6.3rem;
+    margin: 0 auto 1em auto;
+  }
+
+  .featured_shoe,
+  .blur {
+    height: 10rem;
+    width: 14rem;
+  }
+
+  .featured_background {
+    height: 18.188rem;
+  }
+
+  .featured_shoe img {
+    height: 11.938rem;
+    width: 11.875rem;
+    margin-bottom: 1.125em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #Featured {
+    height: 26rem;
+  }
+
+  .featured_text {
+    height: 5.2rem;
+    margin: 0 auto 1em auto;
+  }
+
+  .featured_text h1 {
+    font-size: 1.9rem;
+  }
+
+  .featured_text a {
+    font-size: 1.2rem;
+  }
+
+  .featured_shoe,
+  .blur {
+    height: 9rem;
+    width: 12rem;
+    margin: 1.7rem 0 0 0;
+  }
+
+  .featured_background {
+    height: 16.188rem;
+  }
+
+  .featured_shoe img {
+    height: 9.938rem;
+    width: 9.875rem;
+    margin-bottom: 1.125em;
+  }
+
+  .featured_shoe_info p {
+    font-size: 0.9rem;
   }
 }
