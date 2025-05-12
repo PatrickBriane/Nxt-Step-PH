@@ -49,27 +49,6 @@
   height: 100%;
 }
 
-#products-area .heart {
-  background: none;
-  color: inherit;
-  border: none;
-  position: absolute;
-  align-self: end;
-  margin: 1.313rem 1.375rem 0 0;
-  position: absolute;
-}
-
-#products-area .heart .favorite {
-  width: 1.625rem;
-  height: auto;
-  border-radius: 50px;
-  transition: 0.5s;
-}
-
-#products-area .heart .favorite:hover {
-  box-shadow: 0 0 10px 2px rgb(255, 91, 91);
-}
-
 #products-area .shoe-info {
   flex: 1;
   display: flex;
@@ -175,3 +154,165 @@
   border-color: #2563eb;
 }
 
+@media (max-width: 1450px) {
+
+  #products-area {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.875rem 4rem 0 4rem;
+}
+
+  .product-wrapper,
+  #products-area .container {
+  width: 16.613rem;
+  height: 23.117rem;
+}
+
+#products-area .container .shoe {
+  width: 15.438rem;
+  height: 12.313rem;
+  border-radius: 5.85px 5.85px 0 0;
+  margin: 0.588em 0.588em 0 0.588em;
+}
+
+#products-area .shoe-info {
+  margin: 0.875rem 0 0 0;
+}
+
+#products-area .shoe-info h2 {
+  font-size: 0.877rem;
+  margin: 0 0 0.438em 1.563rem;
+}
+
+#products-area .shoe-info h1 {
+  font-size: 1.169rem;
+  margin: 0 0 0.375em 1.563rem;
+}
+
+#products-area .shoe-info p {
+  font-size: 1.096rem;
+  margin: 0 0 0 1.563rem;
+}
+
+#products-area .product-wrapper .AddtoCart {
+  width: 14.105rem;
+  height: 2.193rem;
+  margin: 0 auto 0.875rem auto;
+  bottom: 0px;
+}
+
+#products-area .product-wrapper .cart {
+  border-radius: 5.85px;
+}
+
+#products-area .product-wrapper .cart img {
+  width: 1.247rem;
+  height: 1.205rem;
+  margin: 0 0 0 -1em;
+}
+
+#products-area .product-wrapper .cart p {
+  font-size: 0.95rem;
+  margin: 0 0 0 0.375rem;
+}
+
+.size-dropdown {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+}
+
+}
+
+@media (max-width: 1300px) {
+   #products-area {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.875rem 3.5rem 0 3.5rem;
+}
+
+ .product-wrapper,
+  #products-area .container {
+  width: 14.613rem;
+  height: 21.117rem;
+}
+
+#products-area .container .shoe {
+  width: 13.438rem;
+  height: 10.313rem;
+  border-radius: 5.85px 5.85px 0 0;
+  margin: 0.588em 0.588em 0 0.588em;
+}
+
+
+#products-area .product-wrapper .AddtoCart {
+  width: 12.105rem;
+  height: 2.193rem;
+  margin: 0 auto 0.875rem auto;
+  bottom: 0px;
+}
+}
+
+@media (max-width: 1150px) {
+   #products-area {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.875rem 3.5rem 0 3.5rem;
+}
+
+}
+
+@media (max-width: 900px) {
+   #products-area {
+  padding: 1.875rem 2rem 0 2rem;
+}
+
+ .product-wrapper,
+  #products-area .container {
+  width: 12.613rem;
+  height: 18.117rem;
+}
+
+.size-dropdown {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.7rem;
+  border-radius: 2px;
+}
+
+#products-area .container .shoe {
+  width: 11.438rem;
+  height: 8.313rem;
+  border-radius: 5.85px 5.85px 0 0;
+  margin: 0.588em 0.588em 0 0.588em;
+}
+
+#products-area .shoe-info h2 {
+  font-size: 0.777rem;
+  margin: 0 0 0.438em 1.563rem;
+}
+
+#products-area .shoe-info h1 {
+  font-size: 1rem;
+  margin: 0 0 0.375em 1.563rem;
+}
+
+#products-area .shoe-info p {
+  font-size: 1rem;
+  margin: 0 0 0 1.563rem;
+}
+
+#products-area .product-wrapper .AddtoCart {
+  width: 10.105rem;
+  height: 1.893rem;
+  margin: 0 auto 0.875rem auto;
+  bottom: 0px;
+}
+
+#products-area .product-wrapper .cart p {
+  font-size: 0.75rem;
+  margin: 0 0 0 0.375rem;
+}
+}
+
+@media (max-width: 700px) {
+   #products-area {
+  grid-template-columns: repeat(2, 1fr);
+   }
+}

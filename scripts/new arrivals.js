@@ -1,11 +1,15 @@
 const products = [
   {
+    id: "jogger-lite-black",
     image: "Images/Shoes/Jogger Lite Black 2.png",
     brand: "Reebok",
     name: "Jogger Lite Black",
     price: "₱1,090",
     pricevalue: 1090,
     isNew: true,
+    bgcolor: "DFDFDF",
+    amazonLink:
+      "https://www.amazon.com/Reebok-Mens-Jogger-Lite-Sneaker/dp/B0D7QX47NC",
   },
   {
     image: "Images/Shoes/Jogger Lite Burgundy2.png",
@@ -14,6 +18,8 @@ const products = [
     price: "₱1,090",
     pricevalue: 1090,
     isNew: true,
+    bgcolor: "FFB8B3",
+    amazonLink:  "https://www.zalora.com.ph/p/reebok-jogger-lite-black-3606139"
   },
   {
     image: "Images/Shoes/Stridium 2.0 “Grey”.png",
@@ -22,6 +28,8 @@ const products = [
     price: "₱1,790",
     pricevalue: 1790,
     isNew: true,
+    bgcolor: "DCDEDE",
+    amazonLink:  "https://shopee.ph/Original-Reebok-stridium-2.0-Men's-Sports-shoes-gray-walking-shoes-i.1247780240.29302622736"
   },
   {
     image: "Images/Shoes/Stridium 2.0 “Black”.png",
@@ -30,6 +38,8 @@ const products = [
     price: "₱990",
     pricevalue: 990,
     isNew: true,
+    bgcolor: "DFDFDF",
+    amazonLink:  "https://shopee.ph/Original-Reebok-stridium-2.0-Men's-Sports-shoes-gray-walking-shoes-i.1247780240.29302622736"
   },
   {
     image: "Images/Shoes/Nike Fly.By Mid 3 BlackWhite.png",
@@ -38,6 +48,8 @@ const products = [
     price: "₱1,090",
     pricevalue: 1090,
     isNew: true,
+    bgcolor: "E6E6E6",
+    amazonLink:  "https://www.nike.com/ph/t/flyby-mid-3-basketball-shoes-jFHsxb?msockid=01d32f8179836d4c05273b5578cd6c25"
   } ]
 
 let productsHTML = "";
@@ -51,7 +63,7 @@ products.forEach((product) => {
               product
             )}'>
                 <div class="container">
-                    <div class="shoe" style="background-color: #DFDFDF;">
+                    <div class="shoe" style="background-color: #${product.bgcolor};">
                         <img class="shoe-img" src="${product.image}" alt="">
                     </div>
 
