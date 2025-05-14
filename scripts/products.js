@@ -1,4 +1,4 @@
-//Almost all the javascript codes are Ai generated or done by following a step by step tutorial, since we did not have enough time and knowledge to do it manually
+//Almost all the javascript codes are done by following a step by step tutorial, since we did not have enough time and knowledge to do it manually
 
 const products = [
   {
