@@ -69,6 +69,11 @@ button {
   padding: 0.875em 1.5em 0 0;
 }
 
+
+#products-header .navigation a:hover {
+  color: #ffffff;
+}
+
 #products-header .icons {
   padding: 1em 0 0 0;
 }
@@ -168,3 +173,5 @@ button {
   font-size: 0.7rem;
 }
 }
+
+

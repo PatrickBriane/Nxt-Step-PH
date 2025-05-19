@@ -32,15 +32,4 @@ document.querySelector(".cart-btn").addEventListener("click", () => {
   alert("Item added to cart!");
 });
 
-const buyNowBtn = document.querySelector(".buy-now-button");
 
-const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
-
-if (selectedProduct && selectedProduct.amazonLink) {
-  buyNowBtn.addEventListener("click", () => {
-    window.open(selectedProduct.amazonLink, "_blank");
-  });
-} else {
-  buyNowBtn.disabled = true;
-  buyNowBtn.textContent = "Not Available";
-}
